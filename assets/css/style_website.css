@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.7;
+    width: 100%;
+    margin: auto;
+    color: white;
+    
+}
+
+@media (min-width:1000px){
+    body{
+        width:70%;
+        background-color: #201c20;
+        background-image: 
+            linear-gradient(to bottom, #c7c7c7, #201c20),
+            url("https://www.transparenttextures.com/patterns/brushed-alum-dark.png");
+        background-blend-mode: overlay;
+        background-repeat: repeat;
+    }
+}
+
+header{
+    background-color: #201c20;
+    background-image: 
+        linear-gradient(to bottom, #c7c7c7, #201c20),
+        url("https://www.transparenttextures.com/patterns/brushed-alum-dark.png");
+    background-blend-mode: overlay;
+    background-repeat: repeat;
+}
+
+main{
+    background-color: #201c20;
+    background-image: 
+        linear-gradient(to top, #c7c7c7, #201c20),
+        url("https://www.transparenttextures.com/patterns/brushed-alum-dark.png");
+    background-blend-mode: overlay;
+    background-repeat: repeat;
+}
+
+
+.contatos address {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    transition: all 0.2 ease;
+}
+
+@media (min-width:1000px){
+    .contatos address{
+        justify-content: flex-start;
+    }
+}
+
+.contatos {
+    text-align: center;
+    margin-right: 10px;
+}
+
+@media (min-width:1000px){
+    .contatos {
+        display: flex;
+        flex-direction: column;
+        margin-left: 2%;
+    }
+}
+
+p.header{
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: "Audiowide", sans-serif;
+    font-size: 3em;
+    text-shadow: 4px 2px 1px black;
+}
+
+@media (min-width:1000px){
+    p.header{
+        text-align: left;
+        margin-left: 2%;
+    }
+}
+
+.icones_redes{
+    width: 50px;
+    border-radius: 50%;
+    filter: invert(1);
+    border: 2px solid rgb(177, 255, 177);
+    box-shadow: 3px 0px 3px white;
+    transition: transform 0.3s ease;
+}
+
+
+.icones_redes:hover {
+    transform:  scale(1.3);
+}
+
+.foto_perfil{
+    width: 250px;
+    border-radius: 50px;
+}
+
+@media (min-width: 1000px){
+    .foto_perfil{
+        display: block;
+        margin: 70px auto 0 auto;
+    }
+}
+
+.introducao h1{
+    font-family: "Chakra Petch", sans-serif;
+    text-align: center;
+    margin-top: 8px;
+    font-size: 2.2em;
+    text-shadow: 4px 2px 2px rgb(0, 0, 0);
+}
+
+@media (min-width:1000px){
+    .introducao h1{
+        margin-top: -30px;
+        font-size: 4.5em;
+        margin-right: 10px;
+    }
+}
+
+@media (min-width:1000px){
+    .layout-desktop{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+}
+
+.introducao p{
+    text-align: center;
+    margin-top: 30px;
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 1.3em;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+
+@media (min-width: 1000px){
+    .introducao p{
+        margin-top: 110px;
+        margin-right: 10px;
+        text-align: left;
+    }
+}
+hr {
+    margin-top: 48px;
+    border: none;
+    height: 5px;
+    background: linear-gradient(to right, #2e272d, rgb(128, 102, 133));
+}
+
+h2.curriculo{
+    text-align: center;
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 1.8em;
+    padding: 15px 0px;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+
+@media (min-width: 1000px){
+    h2.curriculo{ 
+        font-size: 2.5em;
+    }
+}
+
+.botao_pt{
+    background-color: black;
+    padding: 0px 8px;
+    border-radius: 10px;
+}
+
+.botao_eng{
+    padding: 0px 8px;
+    background-color: black;
+    border-radius: 10px;
+}
+.lang_flag{
+    width: 90px;
+    vertical-align: middle;
+}
+
+.curriculo {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+@media (min-width:1000px){
+    .curriculo{
+        justify-content: center;
+    } 
+}
